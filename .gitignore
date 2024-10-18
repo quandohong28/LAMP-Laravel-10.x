@@ -1,0 +1,32 @@
+# Laravel defaults
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+/.env
+/.env.backup
+/.phpunit.result.cache
+/homestead.json
+/homestead.yaml
+/.vagrant
+
+# Laravel cache
+/storage/framework/cache/data
+/storage/logs/*.log
+
+# Ignore IDE files
+/.vscode
+/.idea
+*.sublime-project
+*.sublime-workspace
+
+# Docker related files
+docker-compose.override.yml
+docker/*.log
+docker/mysql/*.pid
+docker/mysql/*.sock
+docker/apache/*.log
+
+# OS files
+.DS_Store
+Thumbs.db
