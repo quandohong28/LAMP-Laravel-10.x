@@ -1,7 +1,7 @@
 FROM php:8.2-apache
 
 # Cài đặt các extension PHP cần thiết
-RUN apt-get update && apt-get install -y \
+RUN apt update && apt install -y \
     libpng-dev \
     libjpeg-dev \
     libfreetype6-dev \
@@ -19,7 +19,7 @@ RUN a2enmod rewrite
 
 # Cài đặt Node.js (nếu cần thiết)
 RUN curl -sL https://deb.nodesource.com/setup_22.x | bash - \
-    && apt-get install -y nodejs
+    && apt install -y nodejs
 
 # Copy file cấu hình Apache
 COPY ./docker/apache/vhost.conf /etc/apache2/sites-available/000-default.conf
